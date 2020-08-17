@@ -12,4 +12,4 @@ Scenario: Reconcile counts if the sensor is offline for a while
   Given the sensor is offline
   When the visitors enter
   Then don't count them and
-  restart from where it left
+  start counting from where it left
