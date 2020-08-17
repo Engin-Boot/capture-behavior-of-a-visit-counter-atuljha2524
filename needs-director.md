@@ -2,9 +2,9 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given sensor is working fine
+  Given sensor is working fine and beds are available
   When a patient passes the sensor
-  Then Count of patiant visits increments by 1
+  Then Count of patient visits increment by 1
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
